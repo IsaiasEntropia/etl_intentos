@@ -1,0 +1,20 @@
+CREATE TABLE cvu_info (
+	persona_id serial PRIMARY KEY,
+	cvu_num VARCHAR ( 5 ) NOT NULL,
+	nombre VARCHAR ( 20 ) NOT NULL);
+	
+
+CREATE TABLE apoyo(
+   beca_id serial PRIMARY KEY,
+   tipo_beca VARCHAR (10) NOT NULL
+);
+
+INSERT INTO
+	cvu_info (cvu_num,nombre)
+VALUES
+	('11980', 'Julio Cortázar' ),
+	('11865', 'Isaac Hiram' ),
+	('11954', 'Pedro Páramo' ),
+	('11234', 'Alejandra Pizarnik' );
+	
+SELECT * FROM cvu_info
